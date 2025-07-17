@@ -1,0 +1,134 @@
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+}
+
+.game-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.game-title {
+    color: #2c3e50;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+.range-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.range-input {
+    padding: 10px 15px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.range-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.range-separator {
+    font-size: 1.5rem;
+    color: #7f8c8d;
+}
+
+.guess-input {
+    padding: 12px 20px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.guess-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    font-size: 1.1rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message.success {
+    background-color: #e8f5e9;
+    border-left-color: #2ecc71;
+    color: #27ae60;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.check {
+    background-color: #3498db;
+    color: white;
+}
+
+.check:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.restart {
+    background-color: #f1f2f6;
+    color: #2c3e50;
+}
+
+.restart:hover {
+    background-color: #dfe6e9;
+    transform: translateY(-2px);
+}
+
+.stats {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from '/styles.module.css'
 import GuessTheNumber from './Components/GameLogic';
 
 function App() {
